@@ -21,7 +21,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: start;
-    width: 60%;
+    width: 50%;
     height: 100vh;
 }
 
@@ -29,19 +29,30 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    
+    height: 650px;
+    background-image:url(img/imagem-principal.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px 550px;  
 }
 
-.instagram-phone img {
-    height: 50rem;
+
+.slide {
+   
+    width: 222px;
+    height: 474px;
+    margin: 0px 60px 36px 145px;
+       
 }
+
 
 .instagram-account {
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    width: 35%;
+    width: 80%%;
     min-height: 34rem;
 }
 
@@ -55,6 +66,10 @@ body{
     padding: 1.3rem 0;
     border: 1px solid lightgrey;
     cursor: pointer;
+}
+
+.account {
+    margin-bottom: 30px;
 }
 
 .group:nth-child(1) {
@@ -118,6 +133,7 @@ body{
     height: 3rem;
     width: 10rem;
     background-size: cover;
+    margin-left: 10px;
 }
 
 .app-download:nth-child(1) {
@@ -130,15 +146,16 @@ body{
 
 /* Responsividade Midia queries */
 
-@media (max-width: 1500px) {
+@media (max-width: 1024px) {
     .instagram-wrapper {
-      width: 100%;
+      width: 80%;
     }
+    
 }
   
 @media (max-width: 900px) {
     .instagram-wrapper {
-      width: 350px;
+      width: 50%;
     }
     .instagram-phone {
       display: none;
